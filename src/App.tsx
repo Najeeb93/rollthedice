@@ -12,8 +12,12 @@ type DiceProps = PropsWithChildren<{
   imageUrl: ImageSourcePropType
 }>
 
-const Dice = ({imageUrl}: DiceProps) => {
-
+const Dice = ({imageUrl}: DiceProps):JSX.Element => {
+  return (
+    <View>
+      <Image style={styles.diceImages} />
+    </View>
+  )
 }
 
 export default function App(): JSX.Element {
