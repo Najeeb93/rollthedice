@@ -1,4 +1,4 @@
-import {View, Text } from 'react-native'
+import {View, Text, StyleSheet } from 'react-native'
 
 export default function App(): JSX.Element {
   return (
@@ -7,3 +7,5 @@ export default function App(): JSX.Element {
     </View>
   )
 }
+
+const styles = StyleSheet.create({});
