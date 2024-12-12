@@ -15,7 +15,7 @@ type DiceProps = PropsWithChildren<{
 const Dice = ({imageUrl}: DiceProps):JSX.Element => {
   return (
     <View>
-      <Image style={styles.diceImages} />
+      <Image style={styles.diceImages} source={imageUrl} />
     </View>
   )
 }
