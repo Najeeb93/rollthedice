@@ -23,8 +23,8 @@ const Dice = ({imageUrl}: DiceProps):JSX.Element => {
 export default function App(): JSX.Element {
   const [diceImage, setDiceImage] = useState(DiceOne)
   return (
-    <View>
-      <Text style={{color: '#ffff'}}>Hello World</Text>
+    <View style={styles.container}>
+      <Dice  imageUrl={diceImage}/>
     </View>
   )
 }
