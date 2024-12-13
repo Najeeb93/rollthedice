@@ -53,8 +53,12 @@ export default function App(): JSX.Element {
   return (
     <View style={styles.container}>
       <Dice  imageUrl={diceImage}/>
-      <Pressable>
-        Roll the dice
+      <Pressable
+      
+      >
+        <Text style={styles.rollDiceBtnText}>
+      Roll the dice
+        </Text>
       </Pressable>
     </View>
   )
