@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, Image, ImageSourcePropType } from 'react-native'
+import {View, Text, StyleSheet, Image, ImageSourcePropType, Pressable } from 'react-native'
 import React, { useState } from 'react';
 import type { PropsWithChildren } from 'react';
 import DiceOne from '../assets/One.png'
@@ -53,6 +53,9 @@ export default function App(): JSX.Element {
   return (
     <View style={styles.container}>
       <Dice  imageUrl={diceImage}/>
+      <Pressable>
+        Roll the dice
+      </Pressable>
     </View>
   )
 }
