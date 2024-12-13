@@ -21,7 +21,12 @@ const Dice = ({imageUrl}: DiceProps):JSX.Element => {
 }
 
 export default function App(): JSX.Element {
-  const [diceImage, setDiceImage] = useState(DiceOne)
+  const [diceImage, setDiceImage] = useState<ImageSourcePropType>(DiceOne)
+
+  const rollDiceOnTap = () => {
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
+
+  }
   return (
     <View style={styles.container}>
       <Dice  imageUrl={diceImage}/>
