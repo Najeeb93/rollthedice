@@ -1,5 +1,5 @@
 import {View, Text, StyleSheet, Image, ImageSourcePropType } from 'react-native'
-import React from 'react';
+import React, { useState } from 'react';
 import type { PropsWithChildren } from 'react';
 import DiceOne from '../assets/One.png'
 import DiceTwo from '../assets/Two.png'
@@ -21,6 +21,7 @@ const Dice = ({imageUrl}: DiceProps):JSX.Element => {
 }
 
 export default function App(): JSX.Element {
+  const [diceImage, setDiceImage] = useState(DiceOne)
   return (
     <View>
       <Text style={{color: '#ffff'}}>Hello World</Text>
